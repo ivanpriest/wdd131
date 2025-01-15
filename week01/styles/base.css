@@ -1,0 +1,133 @@
+:root{
+    --heading-font:'Playfair Display',serif;
+    --text-font:'Inter',sans-serif;
+    --primary-text-color:#000000;
+    --secondary-text-color:#01110A;
+    --secondary-accent-color:#36558f;
+
+}
+*{
+    box-sizing: border-box;
+    padding :2px;
+}
+body{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    margin:0 auto;
+    
+}
+
+
+header{
+    grid-area: header;
+    background-color: var(--secondary-accent-color);
+
+}
+h1{
+    color:white;
+   
+}
+h2{
+    background-color: #36558f;
+    color:white;
+    border-radius:5px 5px 0 0;
+}
+h1,h2,h3{
+    font-family:var(--heading-font);
+}
+p,li{
+    font-family: var(--text-font);
+}
+h1,h2,h3,p{
+    text-align: center;
+    line-height: 1.6;
+
+}
+hr{
+    width:50%;
+}
+i{
+    color:orange;
+}
+header nav{
+    display:flex;
+    justify-content: space-around;
+    background-color: #01110A;
+
+}
+header nav a{
+    text-decoration: none;
+    color:white;
+}
+header nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    grid-area:main;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "aboutme skills";
+    align-items: stretch;
+    column-gap: 15px;
+}
+.aboutMe{
+    grid-area: aboutme;
+}
+.aboutme-container{
+    /* border:0.5px solid #36558f; */
+    border-radius:0 0 5px 5px;
+    margin-top:-30px;
+
+}
+.aboutme-container img{
+    width:150px;
+    float:right;
+    box-shadow: 3px 3px 20px 3px #36558f;
+    padding: 5px;
+    margin:2px 5px;
+    
+
+}
+.location{
+    clear:both;
+}
+#img2{
+    width:200px;
+    float:left;
+    box-shadow: 3px 3px 20px 3px #36558f;
+    padding:0 5px;
+
+}
+.skills{
+    grid-area:skills;
+}
+.skills-container {
+    /* border:0.5px solid #36558f ; */
+    margin-top:-30px;
+    border-radius:0 0 5px 5px;
+    /* height: 89%; */
+   
+}
+ul{
+    margin:20px auto;
+    padding-left: 10em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 2;
+}
+footer{
+    grid-area:footer;
+    background-color: #36558f;
+}
+footer p{
+    color:white;
+}
