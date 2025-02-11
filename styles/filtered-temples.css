@@ -1,0 +1,127 @@
+
+:root{
+    --heading-font:'Playfair Display',serif;
+    --text-font:'Inter',sans-serif;
+    --head-foot-color:#395E66;
+    --secondary:#387D7A;
+    --main-bg-color:#CAE7B9;
+}
+@media  screen and (max-width:561px) {
+    
+*{
+    box-sizing: border-box;
+}
+header,main,footer{
+    margin:-10px;
+    padding:0;
+}
+h1,h2,h3,h4{
+    font-family: var(--heading-font);
+}
+p{
+    font-family: var(--text-font);
+    margin:0;
+}
+
+header,footer{
+    background-color: var(--head-foot-color);
+}
+h1,h2,footer{
+    text-align: center;
+}
+header p,h1,footer p{
+    color:white;
+}
+.ham::before{
+    content:'≡';
+    margin-left:10px;
+}
+.ham.show::before{
+    content:"Ⅹ";
+
+}
+.navigation{
+    background-color: var(--secondary);
+}
+.navigation li:hover{
+    background-color: #395E66;
+}
+
+.navigation li{
+    display:none;
+    width:90%;
+    margin:0 auto;
+}
+
+
+.show li{
+    display:block;
+    text-align: center;
+}
+.navigation li a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation li a:hover{
+    background-color: #395E66;
+    color:yellowgreen;
+}
+
+main{
+    width: 90%;
+    margin:0 auto;
+}
+.card-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto 0;
+    gap:10px;
+    padding :20px;
+}
+.info-container{
+    margin-top:10px;
+}
+.info-container p{
+    margin:5px;
+}
+.card{
+    width:300px;
+    border-radius: 5px;
+    min-height: 370px;
+    flex: 1 1 auto;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card img{
+    padding:2px;
+    border-radius: 5px;
+    width:90%;
+    margin:0 auto 5px;
+    display:block;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+    
+}
+.card p{
+    /* padding:2px; */
+    text-align: center;
+}
+.card h3{
+    text-align:center;
+}
+footer{
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}

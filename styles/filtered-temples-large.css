@@ -1,0 +1,133 @@
+:root{
+    --heading-font:'Playfair Display',serif;
+    --text-font:'Inter',sans-serif;
+    --head-foot-color:#395E66;
+    --secondary:#387D7A;
+    --main-bg-color:#CAE7B9;
+
+}
+@media screen and (min-width: 562px) {
+
+    
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+h1{
+    display: inline-block;
+}
+h1,h2,h3,h4,a{
+    font-family: var(--heading-font);
+}
+p{
+    font-family: var(--text-font);
+}
+        
+header,footer{
+    background-color: var(--head-foot-color);
+    margin: 0;
+}
+header p,h1,footer p{
+    color:white;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 70px;
+    
+}
+h1,h2,footer{
+    text-align: center;
+}
+h1{
+    margin-left:20px;
+}
+main h2{
+    margin:15px;
+}
+.navigation{
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+ nav .navigation{
+    display:flex;
+    justify-content: space-evenly;
+   
+}
+.navigation li{
+    list-style-type: none;
+    flex-grow: 1;
+    margin:0 20px;
+
+}
+.navigation li a{
+    color:white;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    color:aliceblue;
+}
+
+main{
+    max-width: 90%;
+    margin:0 auto;
+}
+.card-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto 0;
+    gap:10px;
+    padding :20px;
+}
+.info-container{
+    margin-top:10px;
+}
+.info-container p{
+    margin:5px;
+}
+.card{
+    width:300px;
+    border-radius: 5px;
+    min-height: 370px;
+    flex: 1 1 auto;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card img{
+    padding:2px;
+    border-radius: 5px;
+    width:90%;
+    margin:0 auto 5px;
+    display:block;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+    
+}
+.card p{
+    /* padding:2px; */
+    text-align: center;
+}
+.card h3{
+    text-align:center;
+}
+footer{
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    
+}
