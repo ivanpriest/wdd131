@@ -51,7 +51,7 @@ main{
     max-width: 400px;
     height: 2.9rem;
 }
-.form .label,p{
+.form .label,p, label{
     display:block;
     padding-top:1rem;
     font-family: var(--text-font);
