@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Review Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Submit and read product reviews with ease. Rate products, share feedback, and track your review history. Join our community of reviewers today!">
+        <meta name="author" content="Ivan Dekportor">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form-large.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form method="get" action="review.html" class="form" required>
+                <label for="products">
+                    <div class="label required">Product Name</div>
+                    <select id="products" name="Productreview" required>
+                        <option value="" disabled selected >Please choose a product</option>   
+                    </select>  
+                <div class="label required">Overall Rating</div>
+                <div class="radio-container" >
+                    <div>
+                        <label for="Rating">⭐</label>
+                        <input type="radio" name="Rating" value="1" required>
+                    </div>
+                    <div>
+                        <label for="Rating">⭐⭐</label>
+                        <input type="radio" name="Rating" value="2" >
+                    </div>
+                    <div>
+                        <label for="Rating">⭐⭐⭐</label>
+                        <input type="radio" name="Rating" value="3" >
+                    </div>
+                    <div>
+                        <label for="Rating">⭐⭐⭐⭐</label>
+                        <input type="radio" name="Rating" value="4" >
+                    </div>
+                    <div>
+                        <label for="Rating">⭐⭐⭐⭐⭐</label>
+                        <input type="radio" name="Rating" value="5" >
+                    </div>
+                </div>
+                <div class="label required">Date of Installation</div>
+                <label for="Installation"><Input type="date" name="Installationdate" id="Installation" required></label>
+                <div class="label">Which feature did yo find useful in the porducts?<br>(check all that apply)</div>    
+                <label for="feature1" class="label"><input type="checkbox" id="feature1" value="Durability" name="feature"> Durability</label>
+                <label for="feature2" class="label"><input type="checkbox" id="feature2" value="Ease of Use" name="feature"> Ease of Use</label>
+                <label for="feature3" class="label"><input type="checkbox" id="feature3" value="Perfomance" name="feature"> Perfomance</label>
+                <label for="feature4" class="label"><input type="checkbox" id="feature4" value="Design" name="feature"> Design</label>
+                <div class="label">Written Review<span>(optional)</span></div>
+                <label for="comment"><textarea id="comment" name="user-comment" placeholder="Enter your comment here"></textarea></label>
+                <div class="label">Your Name<span>(optional)</span></div>
+                <label for="name"><input type="text" id="name" name="name" placeholder="Enter your name here"></label>
+                <input type="submit" value="Post review"></input>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Ivan Dekportor Accra,Ghana.</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

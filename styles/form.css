@@ -1,0 +1,145 @@
+:root{
+    
+    --heading-font:'Domine',serif;
+    --text-font:'Roboto Condensed',sans-serif;
+    --head-foot-color:#acbdba;
+    --accent:#A599B5;
+    --main-bg-color:#cddddd;
+    --text-color1:#051014;
+    --text-color2:#2E2F2F;
+    
+}
+@media screen and (max-width: 561px){
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+    header,footer{
+        background-color:var(--head-foot-color);
+        height: 5rem;
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1,footer p{
+        text-align: center;
+        color: var(--text-color1);
+    }
+    h1{
+        font-family: var(--heading-font);
+    }
+    main{
+        background-color:var(--main-bg-color);
+        width:80%;
+        margin:0 auto;
+    }
+    .form{
+        width:70%;
+        margin:0 auto;
+        padding: 10px;
+    }
+    
+    .form #products{
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: 2.9rem;
+    }
+    .form .label,p{
+        display:block;
+        padding-top:1rem;
+        font-family: var(--text-font);
+    }
+    .form input[type="text"],
+    .form input[type="date"],
+    select,
+    .form textarea
+    {
+        background-color: #eee;
+        display: block;
+        border: 1px solid var(--text-color1);
+        border-radius: 6px;
+        padding:.75rem;
+        color:var(--text-color2);
+        width:100%;
+        max-width: 400px;
+        appearance:none;
+    }
+    
+    .form input[type="submit"]{
+        display:block;
+        color:var(--text-color1);
+        border-radius: 6px;
+        padding:.8rem;
+        border:none; 
+        background-image: linear-gradient(#9c2c13,#6f200e);
+        color:white;
+        width:96%;
+        max-width: 400px;
+        margin:5px 0 2rem;
+        box-shadow: 1px 1px 4px #999;
+        margin-top: 20px;
+    }
+    .radio-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 50%;
+    }
+    .form div{
+        padding-bottom:0;
+        font-size: .9rem;
+    }
+    .radio-container div input{
+        display:block;
+        width :20px;
+        margin:0 auto;
+    }
+    input:required,
+    select:required{
+        border-right: 3px solid red;
+    }  
+     input:required:valid,
+     select:required:valid{
+        border-right: 3px solid green;
+    }
+    .label span{
+        font-size: small;
+        color: blue;
+    }
+    .message-container{
+        min-height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .message-card{
+        width:50%;
+        min-height: 450px;
+        margin:auto auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .message{
+        text-align: center;
+        font-size: 3rem;
+        color:green;
+    }
+    .count{
+        font-size: large;
+    }
+    .required::after{
+        content: "*";
+        color:red;
+    }
+
+}
