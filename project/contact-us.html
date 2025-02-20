@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcasing my expertise as a Software and Web Developer specializing in Python, C#, JavaScript, HTML, and CSS. Explore my projects, skills, and technical insights in full-stack development and software engineering.">
+    <meta name="author" content="Ivan Dekportor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-small.css">
+    <script  src="scripts/project.js" defer></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header id="contact">
+        <h1>PRIEST DEV STUDIOS</h1>
+        <div class="avatar"><img src="images/profile.webp" alt="priest"></div>  
+        <div class="hamburger ">
+            <nav class="navigation-container hide">
+                <a href="index.html">Home</a>
+                <a href="services.html">Serivces</a>
+                <a href="contact-us.html">contact</a>  
+            </nav>
+        </div>  
+    </header>
+    <main class="contact">
+        <h2></h2>
+        <form method="get" action="thanks.html" class="form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Firstname<span>*</span><input type="text" name="fname" required></label>
+                <label>Lastname<span>*</span><input type="text" name="lname" required></label>
+                <label>Email<span>*</span><input type="email" name="email" placeholder="someone@gmail.com" required></label>
+               
+            
+            </fieldset>
+            <fieldset>
+                <legend>Massage </legend>
+                <label for="message">Message<span>*</span></label>
+                <textarea name="message" id="message" placeholder="Enter message here" required></textarea>
+                <div>Massage purpose</div>
+                <label><input type="radio" name="audience" value="Make more enquiry"> Make an enquiry</label>
+                <label><input type="radio" name="audience" value="Giving a feedback"> Give a feedback</label>
+                <div>On</div>
+                <label><input type="checkbox" name="editting" value="yes"> Software Development</label>
+                <label><input type="checkbox" name="code" value="yes"> Web Development</label>
+                <label><input type="checkbox" name="Process" value="yes"> UI/UX Design</label>
+            </fieldset>
+            <input type="submit" value="Send message">
+        </form>
+        <aside class="aside">
+            <div class="contact-info">
+                
+            </div>
+            <div class="map">
+                <iframe 
+                    title="google map showing our office"
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    loading="lazy" 
+                    allowfullscreen 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091945!2d144.9537353153158!3d-37.81627974202171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4769df3b1d%3A0x1d60b2fdb37e45b7!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1646100866312!5m2!1sen!2sus">
+                </iframe>
+            </div>
+        </aside>
+    </main > 
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/ivanpriest"><img src="images/github-logo.png" alt="github"> github</a>
+            <a href="https://www.linkedin.com/in/ivan-dekportor-045579269/"><img src="images/linkedin.png" alt="linkedin">linkedin</a>
+            <a href="https://www.indeed.com/"><img src="images/indeed-logo.svg" alt="indeed">indeed</a>
+        </div>
+        <div class="copy"><p>&copy;<span class="currentyear"></span> Ivan Dekportor Accra, Ghana.</p>
+        </div>
+    </footer>   
+</body>
+</html>

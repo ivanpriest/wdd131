@@ -46,7 +46,8 @@ if (form) {
   });
 }
 let display = document.querySelector(".count");
-if(display){
+if(display)
+  {
     document.addEventListener("DOMContentLoaded", () => {
         let reviewCount = localStorage.getItem("reviewCount") || 0;
         // let display = document.querySelector(".count");
